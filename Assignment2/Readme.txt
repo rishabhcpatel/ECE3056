@@ -1,1 +1,1 @@
-Assignment 2 Cache simulator
+Assignment 2 - Cache simulator
