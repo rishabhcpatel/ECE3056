@@ -1,1 +1,1 @@
-Assignment 1 Pipelined MIPS Processor
+Assignment 1 - Pipelined MIPS Processor
