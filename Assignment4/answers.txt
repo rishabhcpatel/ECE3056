@@ -1,0 +1,54 @@
+ECE 3056 Fall 2018
+Lab Assignment 4
+
+Name: Rishabh C. Patel
+GT Username: rpatel436
+
+Problem 1B
+----------
+
+/* Fix me */
+Total Execution of the following CPUs:
+1 CPU: 67.6 sec
+2 CPU: 35.8 sec
+4 CPU: 33.1 sec
+There is no linear relationship between the number of CPUs and the total execution time.
+The execution time improves, i.e. the ececution time decreases when going from 1 CPU to
+2 CPUs to 4 CPUs. A decreased execution time is observed whenever the number are CPUs are
+increased. However, only a slight decrease in execution time is observed everytime we
+decrease the number of CPUs. As the number of CPUs increase, we observe less improvements
+in execution time because a process with a long CPU burst will hold up other processes
+hurting the overall throughput since the I/O on processes in waiting state may complete
+while the CPU bound process is still running.
+
+
+Problem 2B
+----------
+
+/* Fix me */
+B.1: It is not possible to precisely implement an LRTF algorithm because its impossile to
+predict the exact time of CPU bursts, we can only estimate the burst times of CPUs - which
+makes it essentially impossible to implement an LRTF algorithm.
+
+B.2: 
+Total Waiting Times:
+FIFO (1 CPU): 390.2 sec
+LRTF (1 CPU): 280.3 sec
+
+LRTF has the lowest waiting time. This is because LRTF prioritizes the longer running
+processes first making sure the effect of convoy effect is eliminated - decreasing the
+waiting time for LRTF.
+
+Problem 3B
+----------
+
+/* Fix me */
+Waiting Times for Round Robin Algorithm
+RoundRobin (1 CPU) 800 ms Timeslice: 325.4 sec
+RoundRobin (1 CPU) 600 ms Timeslice: 314.5 sec
+RoundRobin (1 CPU) 400 ms Timeslice: 298.8 sec
+RoundRobin (1 CPU) 200 ms Timeslice: 285.2 sec
+
+The total waiting time decreases with shorter timeslices. As timeslices decreases, the
+total number of context switches increases. In a real OS, having a large number of context
+switches is not practical since you would be switching a constantly. 
